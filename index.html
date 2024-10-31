@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body class="bg-body-tertiary">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <div class="container">
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" class="rounded float-start me-1"
+          alt="Instagram Logo" width="20" height="20">
+        <a class="navbar-brand">Instagram</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#newPostModal">
+              Create a new post
+            </button>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown bg-secondary mx-3 rounded-2">
+                <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profie</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="nav nav-pills d-flex justify-content-center bg-body-tertiary" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class=" active btn btn-light mx-1" id="pills-grid-tab" data-bs-toggle="pill" data-bs-target="#pills-grid"
+          type="button" role="tab" aria-controls="pills-grid" aria-selected="true">
+          <i class="fa-solid fa-table-cells"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="btn btn-light mx-1" id="pills-vertical-tab" data-bs-toggle="pill" data-bs-target="#pills-vertical"
+          type="button" role="tab" aria-controls="pills-vertical" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-grid" role="tabpanel" aria-labelledby="pills-grid-tab">
+        <div class="album py-5 bg-body-tertiary">
+          <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img
+                    src="https://media.vogue.es/photos/629eff774040af7b694bc452/2:3/w_2560%2Cc_limit/GettyImages-181739785.jpg"
+                    alt="Girona" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img
+                    src="https://foreignpolicy.com/wp-content/uploads/2023/10/pakistan-cricket-GettyImages-1704635162.jpg?resize=1200,675"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Criket">
+
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img
+                    src="https://media.admagazine.com/photos/618a679fa9f7fab6f0622f14/master/w_1600%2Cc_limit/64213.jpg"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="SunDown">
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img
+                    src="https://media.istockphoto.com/id/1503385646/es/foto/retrato-divertido-y-feliz-perro-cachorro-shiba-inu-asom%C3%A1ndose-detr%C3%A1s-de-una-pancarta-azul.jpg?s=612x612&w=0&k=20&c=mMZ1Dvy0J8iNpF2boWkL8bo45vYYPi_AvZ1aYr9oO8w="
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Perro">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img
+                    src="https://images.aws.nestle.recipes/resized/30872d9f6bf0bee23cfb508c299de65d_original_milk_chocolate_chip_cookies_(original)_1080_850.jpg"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Cookies">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img src="https://www.clarin.com/2022/10/26/h8FPJtjtv_2000x1500__1.jpg"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Halloween">
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img src="https://media.iatiseguros.com/wp-content/uploads/2019/03/04010853/que-ver-vietnam-2.jpg"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Vietnam">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img src="https://danzadefogones.com/wp-content/uploads/2023/11/guacamole-casero.jpg"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Guacamole">
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm" style="width: 100%; height: 350px; overflow: hidden;">
+                  <img src="https://www.piscinadecor.com/wp-content/uploads/2023/07/piscinas-fibra-barcelona.jpg"
+                    style="width: 100%; height: 100%; object-fit: cover;" alt="Pool">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="pills-vertical" role="tabpanel" aria-labelledby="pills-vertical-tab">
+        <div class="bg-body-tertiary d-flex justify-content-center align-items-center flex-column">
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Girona✨</h3>
+                  <p>12/24</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img
+                  src="https://media.vogue.es/photos/629eff774040af7b694bc452/2:3/w_2560%2Cc_limit/GettyImages-181739785.jpg"
+                  alt="Girona" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>500 Likes</strong></p>
+                <p>Descubriendo Girona: una joya donde la historia y la modernidad se encuentran, con sus coloridas
+                  casas y encantadoras calles empedradas. 🌆✨ #Girona #Viaje</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Criket Day!</h3>
+                  <p>8/24</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img
+                  src="https://foreignpolicy.com/wp-content/uploads/2023/10/pakistan-cricket-GettyImages-1704635162.jpg?resize=1200,675"
+                  alt="Criket" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>243 Likes</strong></p>
+                <p>Un deporte lleno de estrategia, habilidad y emoción. Con su rica historia y apasionados aficionados,
+                  cada partido es una danza de precisión y trabajo en equipo. ¡Un juego que une a las naciones! 🏏🌍
+                  #Criket #Pasión</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Atardecer Mágico</h3>
+                  <p>3/24</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img
+                  src="https://media.admagazine.com/photos/618a679fa9f7fab6f0622f14/master/w_1600%2Cc_limit/64213.jpg"
+                  alt="SunDown" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>380 Likes</strong></p>
+                <p>Un atardecer en la playa: el sol se hunde en el horizonte, pintando el cielo de tonos cálidos
+                  mientras las olas susurran en la orilla. 🌅🏖️ #PuestaDeSol #Naturaleza</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Happy Dog</h3>
+                  <p>1/24</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img
+                  src="https://media.istockphoto.com/id/1503385646/es/foto/retrato-divertido-y-feliz-perro-cachorro-shiba-inu-asom%C3%A1ndose-detr%C3%A1s-de-una-pancarta-azul.jpg?s=612x612&w=0&k=20&c=mMZ1Dvy0J8iNpF2boWkL8bo45vYYPi_AvZ1aYr9oO8w="
+                  alt="Dog" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>568 Likes</strong></p>
+                <p>Un perro feliz es pura alegría en cuatro patas, con su cola moviéndose como un torbellino y su
+                  energía desbordante. ¡Cada momento a su lado es una aventura llena de amor y diversión! 🐾❤️
+                  #PerroFeliz #AmorPerruno</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Cookies</h3>
+                  <p>11/23</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img
+                  src="https://images.aws.nestle.recipes/resized/30872d9f6bf0bee23cfb508c299de65d_original_milk_chocolate_chip_cookies_(original)_1080_850.jpg"
+                  alt="Cookies" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>295 Likes</strong></p>
+                <p>Las galletas son el dulce abrazo que alegra cualquier día. Crujientes por fuera, suaves por dentro y
+                  siempre llenas de sabor. Perfectas para compartir o disfrutar solas. 🍪❤️ #Galletas #DulcesMomentos
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Halloween</h3>
+                  <p>10/23</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img src="https://www.clarin.com/2022/10/26/h8FPJtjtv_2000x1500__1.jpg" alt="Halloween"
+                  style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>1040 Likes</strong></p>
+                <p>¡Feliz Halloween! 🎃 Noche de brujas, calabazas iluminadas y dulces sorpresas. ¡Deja volar tu
+                  imaginación y disfruta de la magia de este día espeluznante! 👻🍬 #Halloween #NocheDeBrujas</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Vietnam</h3>
+                  <p>7/23</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img src="https://media.iatiseguros.com/wp-content/uploads/2019/03/04010853/que-ver-vietnam-2.jpg"
+                  alt="Vietnam" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>567 Likes</strong></p>
+                <p>Vietnam: un país de paisajes impresionantes, cultura vibrante y deliciosa gastronomía. Desde los
+                  campos de arroz de Sapa hasta las calles bulliciosas de Hanoi, cada rincón cuenta una historia única.
+                  🌏✨ #Vietnam #Viaje</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Guacamole</h3>
+                  <p>5/23</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img src="https://danzadefogones.com/wp-content/uploads/2023/11/guacamole-casero.jpg" alt="guacamole"
+                  style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>349 Likes</strong></p>
+                <p>El guacamole: un deleite cremoso y fresco que combina aguacate, cilantro, limón y un toque de
+                  picante. Perfecto para acompañar tus nachos, tacos o simplemente disfrutar a cucharadas. 🥑🌶️
+                  #Guacamole #Sabor</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card m-3" style="width: 33%;">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3>Piscina</h3>
+                  <p>3/23</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <img src="https://www.piscinadecor.com/wp-content/uploads/2023/07/piscinas-fibra-barcelona.jpg"
+                  alt="Swiming pool" style="width: 100%;">
+              </li>
+              <li class="list-group-item">
+                <p><strong>15 Likes</strong></p>
+                <p>Sumérgete en la diversión y la relajación en la piscina. Un lugar perfecto para refrescarse,
+                  disfrutar del sol y crear recuerdos inolvidables. 🏊‍♂️☀️ #SwimmingPool #Verano</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content mt-3" id="myTabContent">
+      <div class="tab-pane fade show active" id="gridPhotos" role="tabpanel" aria-labelledby="gridPhotos-tab">
+        
+      </div>
+
+      <div class="tab-pane fade" id="verticalPhotos" role="tabpanel" aria-labelledby="verticalPhotos-tab">
+        
+      </div>
+    </div>
+
+    <div class="modal fade" id="newPostModal" tabindex="-1" aria-labelledby="newPostModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Caption:</p>
+            <textarea class="form-control" aria-label="With textarea"
+              placeholder="Add the caption of your post here"></textarea>
+            <i class="fa-solid fa-camera bg-light m-1 rounded-2 p-2" href="#"></i>
+            <i class="fa-solid fa-location-dot bg-light m-1 rounded-2 p-2" href="#"></i>
+          </div>
+
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+</body>
+
+</html>
